@@ -199,6 +199,8 @@ export default class Player extends Entity {
         switch (type) {
             case ENTITY_TYPE_ENUM.SKULL_HEAD:
             case ENTITY_TYPE_ENUM.BOMB:
+            case ENTITY_TYPE_ENUM.PEACH:
+            case ENTITY_TYPE_ENUM.MUSHROOM:
                 this._throwing(type)
                 break
             case ENTITY_TYPE_ENUM.KEY:
@@ -333,6 +335,10 @@ export default class Player extends Entity {
             throw_item = DataManager.instance.skull_heads.find(item => item.state == ENTITY_STATE_ENUM.DIE)
         } else if (type == ENTITY_TYPE_ENUM.BOMB) {
             throw_item = DataManager.instance.bombs.find(item => item.state == ENTITY_STATE_ENUM.DIE)
+        } else if (type == ENTITY_TYPE_ENUM.PEACH) {
+            throw_item = DataManager.instance.peaches.find(item => item.state == ENTITY_STATE_ENUM.DIE)
+        } else if (type == ENTITY_TYPE_ENUM.MUSHROOM) {
+            throw_item = DataManager.instance.mushrooms.find(item => item.state == ENTITY_STATE_ENUM.DIE)
         }
         if (throw_item) {
             // 播放声音
