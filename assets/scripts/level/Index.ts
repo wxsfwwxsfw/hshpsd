@@ -27,8 +27,33 @@ import L22 from "./L22"
 import L23 from "./L23"
 import L24 from "./L24"
 import L25 from "./L25"
+import L26 from "./L26"
+import L27 from "./L27"
+import L28 from "./L28"
+import L29 from "./L29"
+import L30 from "./L30"
+import L31 from "./L31"
+import L32 from "./L32"
+import L33 from "./L33"
+import L34 from "./L34"
+import L35 from "./L35"
+import L36 from "./L36"
+import L37 from "./L37"
+import L38 from "./L38"
+import L39 from "./L39"
+import L40 from "./L40"
+import L41 from "./L41"
+import L42 from "./L42"
+import L43 from "./L43"
+import L44 from "./L44"
+import L45 from "./L45"
+import L46 from "./L46"
+import L47 from "./L47"
+import L48 from "./L48"
+import L49 from "./L49"
+import L50 from "./L50"
 
-export const LEVEL_COUNT = 25
+export const LEVEL_COUNT = 50
 
 export interface ILevelInfo {
     map: Array<Array<{ type: TILE_TYPE_ENUM | null, name?: string }>>,
@@ -119,4 +144,29 @@ export default {
     L23,
     L24,
     L25,
+    L26,
+    L27,
+    L28,
+    L29,
+    L30,
+    L31,
+    L32,
+    L33,
+    L34,
+    L35,
+    L36,
+    L37,
+    L38,
+    L39,
+    L40,
+    L41,
+    L42,
+    L43,
+    L44,
+    L45,
+    L46,
+    L47,
+    L48,
+    L49,
+    L50,
 }
