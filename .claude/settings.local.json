@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /d/hshpsd -name *.fire -type f)",
+      "Bash(xargs grep:*)",
+      "Bash(grep -r \"generateInventory\\\\|onCtrlInput\" D:/hshpsd/assets/scripts --include=*.ts)",
+      "Bash(find D:/hshpsd/assets -name *Input* -o -name *Control* -o -name *Input*.ts)",
+      "Bash(python3:*)",
+      "Bash(/tmp/ui_layout_report.txt:*)",
+      "Read(//tmp/**)",
+      "Read(//d/psd1/assets/scripts/entity/**)",
+      "Read(//d/psd1/assets/scripts/**)",
+      "Bash(cp \"D:/psd1/psd1/assets/scripts/entity/player/Player.ts\" \"D:/hshpsd/assets/scripts/entity/player/Player.ts\")",
+      "Bash(cp \"D:/psd1/psd1/assets/scripts/entity/player/PlayerFsm.ts\" \"D:/hshpsd/assets/scripts/entity/player/PlayerFsm.ts\")",
+      "Bash(cp \"D:/psd1/psd1/assets/scripts/anim/FiniteState.ts\" \"D:/hshpsd/assets/scripts/anim/FiniteState.ts\")",
+      "Bash(cp \"D:/psd1/psd1/assets/scripts/anim/FiniteStateMachine.ts\" \"D:/hshpsd/assets/scripts/anim/FiniteStateMachine.ts\")",
+      "Bash(python:*)",
+      "Bash(xargs ls:*)"
+    ]
+  }
+}

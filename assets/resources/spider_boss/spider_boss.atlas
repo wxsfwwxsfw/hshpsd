@@ -1,0 +1,83 @@
+
+spider_boss.png
+size: 193,80
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+xue_body
+  rotate: true
+  xy: 2, 27
+  size: 51, 49
+  orig: 53, 51
+  offset: 1, 1
+  index: -1
+xue_foot_1_1
+  rotate: true
+  xy: 88, 8
+  size: 17, 42
+  orig: 17, 42
+  offset: 0, 0
+  index: -1
+xue_foot_1_2
+  rotate: true
+  xy: 94, 27
+  size: 24, 28
+  orig: 24, 30
+  offset: 0, 1
+  index: -1
+xue_foot_2
+  rotate: true
+  xy: 2, 2
+  size: 23, 47
+  orig: 24, 48
+  offset: 1, 1
+  index: -1
+xue_foot_3_1
+  rotate: true
+  xy: 124, 36
+  size: 15, 34
+  orig: 15, 34
+  offset: 0, 0
+  index: -1
+xue_foot_3_2
+  rotate: true
+  xy: 172, 15
+  size: 22, 19
+  orig: 22, 19
+  offset: 0, 0
+  index: -1
+xue_foot_4
+  rotate: true
+  xy: 166, 39
+  size: 39, 25
+  orig: 43, 27
+  offset: 0, 1
+  index: -1
+xue_foot_5
+  rotate: true
+  xy: 51, 2
+  size: 23, 35
+  orig: 24, 36
+  offset: 1, 1
+  index: -1
+xue_head
+  rotate: false
+  xy: 53, 27
+  size: 39, 51
+  orig: 41, 53
+  offset: 1, 0
+  index: -1
+xue_tail
+  rotate: false
+  xy: 132, 2
+  size: 38, 32
+  orig: 40, 34
+  offset: 1, 1
+  index: -1
+yz
+  rotate: false
+  xy: 94, 53
+  size: 70, 25
+  orig: 76, 29
+  offset: 2, 3
+  index: -1

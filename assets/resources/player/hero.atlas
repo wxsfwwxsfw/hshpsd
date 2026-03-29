@@ -1,0 +1,132 @@
+
+hero.png
+size: 273,109
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+00
+  rotate: true
+  xy: 213, 73
+  size: 34, 29
+  orig: 47, 30
+  offset: 13, 0
+  index: -1
+1
+  rotate: true
+  xy: 181, 68
+  size: 39, 30
+  orig: 42, 33
+  offset: 1, 1
+  index: -1
+arm1
+  rotate: true
+  xy: 191, 5
+  size: 19, 33
+  orig: 21, 35
+  offset: 1, 1
+  index: -1
+arm2
+  rotate: false
+  xy: 257, 90
+  size: 14, 17
+  orig: 16, 19
+  offset: 1, 1
+  index: -1
+arm3
+  rotate: true
+  xy: 241, 30
+  size: 16, 24
+  orig: 18, 26
+  offset: 1, 1
+  index: -1
+arm4
+  rotate: false
+  xy: 256, 7
+  size: 15, 21
+  orig: 17, 23
+  offset: 1, 1
+  index: -1
+body
+  rotate: false
+  xy: 147, 68
+  size: 32, 39
+  orig: 32, 39
+  offset: 0, 0
+  index: -1
+bu1
+  rotate: false
+  xy: 226, 2
+  size: 28, 26
+  orig: 29, 26
+  offset: 1, 0
+  index: -1
+bu2
+  rotate: false
+  xy: 241, 48
+  size: 18, 23
+  orig: 19, 23
+  offset: 0, 0
+  index: -1
+eye1
+  rotate: false
+  xy: 147, 54
+  size: 27, 12
+  orig: 30, 14
+  offset: 1, 1
+  index: -1
+eye2
+  rotate: true
+  xy: 244, 80
+  size: 27, 11
+  orig: 30, 13
+  offset: 1, 1
+  index: -1
+head
+  rotate: false
+  xy: 95, 52
+  size: 50, 55
+  orig: 52, 57
+  offset: 1, 1
+  index: -1
+leg2
+  rotate: true
+  xy: 95, 2
+  size: 21, 46
+  orig: 21, 46
+  offset: 0, 0
+  index: -1
+leg4
+  rotate: true
+  xy: 143, 2
+  size: 21, 46
+  orig: 21, 46
+  offset: 0, 0
+  index: -1
+weapon1
+  rotate: true
+  xy: 2, 13
+  size: 94, 91
+  orig: 96, 93
+  offset: 1, 1
+  index: -1
+weijin1
+  rotate: true
+  xy: 209, 30
+  size: 36, 30
+  orig: 36, 31
+  offset: 0, 1
+  index: -1
+weijin2
+  rotate: false
+  xy: 176, 26
+  size: 31, 40
+  orig: 32, 42
+  offset: 1, 2
+  index: -1
+ying
+  rotate: false
+  xy: 95, 25
+  size: 79, 25
+  orig: 81, 27
+  offset: 1, 1
+  index: -1

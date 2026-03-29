@@ -1,0 +1,36 @@
+{
+  "ver": "1.2.6",
+  "uuid": "a0c685ee-ef87-429c-ad95-202015072e73",
+  "importer": "asset",
+  "rawTextureUuid": "819c6e46-0ac0-47d0-aa26-9955c665d70b",
+  "size": {
+    "width": 150,
+    "height": 50
+  },
+  "type": "Texture Packer",
+  "subMetas": {
+    "attacked.png": {
+      "ver": "1.0.6",
+      "uuid": "de4184c2-28b7-466e-afb2-8846ed66c54c",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "819c6e46-0ac0-47d0-aa26-9955c665d70b",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 150,
+      "height": 50,
+      "rawWidth": 150,
+      "rawHeight": 50,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "spriteType": "normal",
+      "subMetas": {}
+    }
+  }
+}

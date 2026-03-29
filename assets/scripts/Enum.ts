@@ -1,0 +1,244 @@
+// Created by carolsail
+
+// 有限状态机参数类型枚举
+export enum FSM_PARAM_TYPE_ENUM {
+    TRIGGER = 'TRIGGER',
+    NUMBER = 'NUMBER'
+}
+
+// 状态机参数名
+export enum FSM_PARAM_NAME_ENUM {
+    DIRECTION = 'DIRECTION',
+    NUM_CURRENT = 'NUM_CURRENT',
+    NUM_TOTAL = 'NUM_TOTAL'
+}
+
+// 输入控制指令枚举
+export enum INPUT_PROCESS_ENUM {
+    UP = 'UP',
+    RIGHT = 'RIGHT',
+    DOWN = 'DOWN',
+    LEFT = 'LEFT'
+}
+
+// 事件枚举
+export enum EVENT_ENUM {
+    GAME_CTRL_INPUT = 'GAME_CTRL_INPUT',
+    GAME_LEVEL_NEXT = 'GAME_LEVEL_NEXT',
+    GAME_LEVEL_RESTART = 'GAME_LEVEL_RESTART',
+    GAME_LEVEL_DATA_RESET = 'GAME_LEVEL_DATA_RESET',
+    GAME_LEVEL_DATA_RECORD = 'GAME_LEVEL_DATA_RECORD',
+    GAME_LEVEL_DATA_REVOKE = 'GAME_LEVEL_DATA_REVOKE',
+    EFFECT_SCREEN_SHAKE = 'EFFECT_SCREEN_SHAKE',
+    EFFECT_AUDIO_PLAY = 'EFFECT_AUDIO_PLAY',
+    RENDER_MENU = 'RENDER_MENU',
+    RENDER_MAIN = 'RENDER_MAIN',
+    RENDER_TIPS = 'RENDER_TIPS',
+    CLOSE_TIPS = 'CLOSE_TIPS',
+    RENDER_INVENTORY = 'RENDER_INVENTORY',
+    ENTITY_DUST_GENERATE = 'ENTITY_DUST_GENERATE',
+    ENTITY_SPIDERWEB_GENERATE = 'ENTITY_SPIDERWEB_GENERATE',
+    ENTITY_STEP_STARTING = 'ENTITY_STEP_STARTING',
+    ENTITY_STEP_FINISHED = 'ENTITY_STEP_FINISHED',
+    ENTITY_ATTACKED = 'ENTITY_ATTACKED',
+    INVENTORY_ADD = 'INVENTORY_ADD',
+    INVENTORY_DEL = 'INVENTORY_DEL',
+    INVENTORY_TOUCH = 'INVENTORY_TOUCH',
+    DOOR_OPEN = 'DOOR_OPEN',
+    SPIDERZ_ATTACK = 'DOOR_OPEN'
+}
+
+// 节点层级
+export enum NODE_ZINDEX_ENUM {
+    STAGE,
+    FLOOR_TRAP,
+    FLOOR_TRAP_SWITCH,
+    FLOOR_SPIKE,
+    FLOOR_BROKEN,
+    SPIKE,
+    WATER,
+    WATER_LILY,
+    DEATH,
+    DUST,
+    DOOR,
+    COBWEB,
+    BLACK_DUST,
+    GRASS,
+    PEACH,
+    MUSHROOM,
+    STONE,
+    TREE,
+    COCOON,
+    DEAD_BODY,
+    EXPRESSION,
+    KEY,
+    POT,
+    DIRTPILE,
+    WEAPON,
+    SHOVEL,
+    SKULL_HEAD,
+    BOMB,
+    BOX,
+    MOUSE,
+    BEATLE,
+    SPIDER,
+    PIG,
+    STELE,
+    SPIDERZ,
+    PLAYER,
+    SKELETON,
+    SPIDER_WEB,
+    TIPS
+}
+
+// 实体类型
+export enum ENTITY_TYPE_ENUM {
+    PLAYER = 'PLAYER',
+    DUST = 'DUST',
+    WEAPON = 'WEAPON',
+    DOOR = 'DOOR',
+    KEY = 'KEY',
+    POT = 'POT',
+    BEATLE = 'BEATLE',
+    WATER = 'WATER',
+    SKULL_HEAD = 'SKULL_HEAD',
+    SPIDER = 'SPIDER',
+    SPIDER_WEB = 'SPIDER_WEB',
+    BOX = 'BOX',
+    FLOOR_BROKEN = 'FLOOR_BROKEN',
+    FLOOR_TRAP = 'FLOOR_TRAP',
+    FLOOR_TRAP_SWITCH = 'FLOOR_TRAP_SWITCH',
+    FLOOR_SPIKE_ONE = 'FLOOR_SPIKE_ONE',
+    FLOOR_SPIKE_TWO = 'FLOOR_SPIKE_TWO',
+    FLOOR_SPIKE_THREE = 'FLOOR_SPIKE_THREE',
+    FLOOR_SPIKE_FOUR = 'FLOOR_SPIKE_FOUR',
+    PIG = 'PIG',
+    WATER_LILY = 'WATER_LILY',
+    SPIKE = 'SPIKE',
+    MOUSE = 'MOUSE',
+    BOMB = 'BOMB',
+    SHOVEL = 'SHOVEL',
+    DIRTPILE = 'DIRTPILE',
+    SKELETON = 'SKELETON',
+
+    //+++++新增实体类型
+    STELE = 'STELE',
+    GRASS = 'GRASS',
+    STONE = 'STONE',
+    TREE = 'TREE',
+    BLACK_DUST = 'BLACK_DUST',
+    COBWEB = 'COBWEB',
+    COCOON = 'COCOON',
+    DEAD_BODY = 'DEAD_BODY',
+    EXPRESSION = 'EXPRESSION',
+    SPIDERZ = 'SPIDERZ',
+    PEACH = 'PEACH',
+    MUSHROOM = 'MUSHROOM'
+}
+
+// 实体移动方向
+export enum ENTITY_DIRECTION_ENUM {
+    UP = 'UP',
+    RIGHT = 'RIGHT',
+    DOWN = 'DOWN',
+    LEFT = 'LEFT'
+}
+
+// 实体状态
+export enum ENTITY_STATE_ENUM {
+    IDLE = 'IDLE',
+    IDLE_WEAPON = 'IDLE_WEAPON',
+    MOVE = 'MOVE',
+    MOVE_WEAPON = 'MOVE_WEAPON',
+    DIE = 'DIE',
+    ATTACK = 'ATTACK',
+    ATTACKED = 'ATTACKED',
+    FALL = 'FALL'
+}
+
+// ai行为类型
+export enum ENTITY_AI_TYPE {
+    MOVE_LINE = 'MOVE_LINE', // 直线移动碰障碍物180转向
+    MOVE_AROUND = 'MOVE_AROUND', // 碰障碍物顺时针转向
+    TURN_LINE = 'TURN_LINE', // 180转向
+    TURN_AROUND = 'TURN_AROUND', // 顺时针转向
+    MOVE_FOLLOW = 'MOVE_FOLLOW', // 跟随
+}
+
+// 尖刺数类型
+export enum FLOOR_SPIKE_NUM_ENUM {
+    ZERO = 'ZERO',
+    ONE = 'ONE',
+    TWO = 'TWO',
+    THREE = 'THREE',
+    FOUR = 'FOUR',
+    FIVE = 'FIVE',
+}
+
+// 瓦片信息
+export enum TILE_INFO_ENUM {
+    // WIDTH = 55,
+    // HEIGHT = 55
+    WIDTH = 82,
+    HEIGHT = 82
+}
+
+// 瓦片类型
+export enum TILE_TYPE_ENUM {
+    FLOOR = 'FLOOR',
+    WALL = 'WALL'
+}
+
+// 屏幕抖动方向
+export enum SHAKE_DIRECTION_ENUM {
+    UP = 'UP',
+    RIGHT = 'RIGHT',
+    DOWN = 'DOWN',
+    LEFT = 'LEFT'
+}
+
+// 声效枚举
+export enum AUDIO_EFFECT_ENUM {
+    GAME_CLICK = 'GAME_CLICK',
+    PLAYER_ATTACK = 'PLAYER_ATTACK',
+    PLAYER_COLLECT = 'PLAYER_COLLECT',
+    PLAYER_THROW = 'PLAYER_THROW',
+    PLAYER_MOVE_BLOCK = 'PLAYER_MOVE_BLOCK',
+    PLAYER_DIE = 'PLAYER_DIE',
+    FLOOR_SPIKE = 'FLOOR_SPIKE',
+    FLOOR_TRAP = 'FLOOR_TRAP',
+    FLOOR_BROKEN = 'FLOOR_BROKEN',
+    BEATLE_DIE = 'BEATLE_DIE',
+    POT_DIE = 'POT_DIE',
+    SPIDER_ATTACK = 'SPIDER_ATTACK',
+    SPIDER_DIE = 'SPIDER_DIE',
+    BOX_MOVE = 'BOX_MOVE',
+    PIG_NOTICE = 'PIG_NOTICE',
+    BOMB = 'BOMB'
+}
+
+// 场景枚举
+export enum GAME_SCENE_ENUM {
+    LOADING = 'Loading',
+    MENU = 'Menu',
+    MAIN = 'Main',
+    SELECT_LEVEL = 'SelectLevel',
+    PREORDER = 'Preorder',
+    LOGIN = 'Login'
+}
+
+// Tip节点
+export enum TIP_NODE_ENUM {
+    EMPTY = 'Empty',
+    LEVEL_COMPLETE = 'LevelComplete',
+    HELPER_MOVE = 'HelperMove',
+    HELPER_ITEM = 'HelperItem',
+    PAUSE_PANEL = 'PausePanel'
+}
+
+// 资源类型
+export enum RESOURCE_TYPE_ENUM {
+    SPRITE_ATLAS = 'SPRITE_ATLAS',
+    SPRITE_FRAME = 'SPRITE_FRAME',
+    SPINE = 'SPINE'
+}

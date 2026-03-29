@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>Trs_Chest_Big/Trs_Chest_Big_01.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,139},{112,108}}</string>
+				<key>offset</key>
+				<string>{-17,-16}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{146,139}</string>
+			</dict>
+			<key>Trs_Chest_Big/Trs_Chest_Big_02.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{142,135},{115,139}}</string>
+				<key>offset</key>
+				<string>{-16,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{146,139}</string>
+			</dict>
+			<key>Trs_Chest_Big/Trs_Chest_Big_03.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{287,0},{135,136}}</string>
+				<key>offset</key>
+				<string>{-6,-2}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{146,139}</string>
+			</dict>
+			<key>Trs_Chest_Big/Trs_Chest_Big_04.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{142,139}}</string>
+				<key>offset</key>
+				<string>{-2,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{146,139}</string>
+			</dict>
+			<key>Trs_Chest_Big/Trs_Chest_Big_05.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{142,0},{145,135}}</string>
+				<key>offset</key>
+				<string>{-1,-2}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{146,139}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>Trs_Chest_Big.png</string>
+			<key>realTextureFileName</key>
+			<string>Trs_Chest_Big.png</string>
+			<key>size</key>
+			<string>{422,274}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>422</integer>
+			<key>height</key>
+			<integer>274</integer>
+		</dict>
+	</dict>
+</plist>
