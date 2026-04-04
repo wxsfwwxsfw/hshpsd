@@ -9,7 +9,7 @@ export default class Mushroom extends Entity {
     async init(data: IEntity) {
         this.fsm = this.node.addComponent(MushroomFsm)
         await Promise.all([this.fsm.init()])
-        const params = Object.assign(data, { width: 50, height: 50, offsetX: 0, offsetY: 0 })
+        const params = Object.assign(data, { width: 50, height: 62, offsetY: -1 })
         super.init(params)
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished, this)
     }

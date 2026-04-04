@@ -16,7 +16,7 @@ export default class SkullHead extends Entity {
         this.fsm = this.node.addComponent(SkullHeadFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        const params = Object.assign(data, { width: 42, height: 38 })
+        const params = Object.assign(data, { width: 50, height: 62, offsetY: -3 })
         super.init(params)
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished, this)

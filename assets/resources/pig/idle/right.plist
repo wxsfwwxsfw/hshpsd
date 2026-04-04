@@ -4,51 +4,67 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>right_01.png</key>
+            <key>right_0.png</key>
             <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
+                <key>frame</key>
+                <string>{{0,0},{72,56}}</string>
+                <key>offset</key>
                 <string>{0,0}</string>
-                <key>spriteSize</key>
-                <string>{55,55}</string>
-                <key>spriteSourceSize</key>
-                <string>{55,55}</string>
-                <key>textureRect</key>
-                <string>{{0,0},{55,55}}</string>
-                <key>textureRotated</key>
+                <key>rotated</key>
                 <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{72,56}}</string>
+                <key>sourceSize</key>
+                <string>{72,56}</string>
             </dict>
-            <key>right_03.png</key>
+            <key>right_1.png</key>
             <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
+                <key>frame</key>
+                <string>{{72,0},{72,56}}</string>
+                <key>offset</key>
                 <string>{0,0}</string>
-                <key>spriteSize</key>
-                <string>{55,55}</string>
-                <key>spriteSourceSize</key>
-                <string>{55,55}</string>
-                <key>textureRect</key>
-                <string>{{55,0},{55,55}}</string>
-                <key>textureRotated</key>
+                <key>rotated</key>
                 <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{72,56}}</string>
+                <key>sourceSize</key>
+                <string>{72,56}</string>
+            </dict>
+            <key>right_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{144,0},{72,56}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{72,56}}</string>
+                <key>sourceSize</key>
+                <string>{72,56}</string>
+            </dict>
+            <key>right_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{216,0},{72,56}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{72,56}}</string>
+                <key>sourceSize</key>
+                <string>{72,56}</string>
             </dict>
         </dict>
         <key>metadata</key>
         <dict>
             <key>format</key>
-            <integer>3</integer>
-            <key>pixelFormat</key>
-            <string>RGBA8888</string>
-            <key>premultiplyAlpha</key>
-            <false/>
+            <integer>2</integer>
             <key>realTextureFileName</key>
             <string>right.png</string>
             <key>size</key>
-            <string>{110,55}</string>
-            <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:d6f1e21aa2b277eed8ca8cd2919b71fe:668afe13629611b82fcac36ce0a0b75e:eeed88a3defe439e06eddcb618ab96e1$</string>
+            <string>{288,56}</string>
             <key>textureFileName</key>
             <string>right.png</string>
         </dict>

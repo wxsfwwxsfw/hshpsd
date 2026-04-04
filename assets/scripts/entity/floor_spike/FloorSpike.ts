@@ -18,7 +18,7 @@ export default class FloorSpike extends Entity {
         await Promise.all([this.fsm.init()])
         // 初始化
         // const params = Object.assign(data, { width: DataManager.instance.currentLevelTileWidth * 4, height: DataManager.instance.currentLevelTileWidth * 4 })
-        const params = Object.assign(data, { width: DataManager.instance.currentLevelTileWidth, height: DataManager.instance.currentLevelTileWidth * 1.125, offsetY: 15 })
+        const params = Object.assign(data, { width: DataManager.instance.currentLevelTileWidth, height: DataManager.instance.currentLevelTileWidth * 1.125, offsetX: 1, offsetY: 3 })
         super.init(params)
         // 触发setter
         this.current = data.numCurrent || 0

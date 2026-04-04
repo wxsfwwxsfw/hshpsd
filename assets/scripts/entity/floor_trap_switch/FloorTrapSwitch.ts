@@ -13,7 +13,7 @@ export default class FloorTrapSwitch extends Entity {
         this.fsm = this.node.addComponent(FloorTrapSwitchFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        const params = Object.assign(data, { width: DataManager.instance.currentLevelTileWidth - 15, height: DataManager.instance.currentLevelTileWidth - 16 })
+        const params = Object.assign(data, { width: DataManager.instance.currentLevelTileWidth - 15, height: DataManager.instance.currentLevelTileWidth - 16, offsetY: 8 })
         super.init(params)
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_STARTING, this.onStepStarting, this)

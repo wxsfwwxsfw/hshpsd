@@ -105,6 +105,8 @@ export interface IEntity {
     type: ENTITY_TYPE_ENUM,
     x: number,
     y: number,
+    offsetX?: number,
+    offsetY?: number,
     dir?: ENTITY_DIRECTION_ENUM,
     state?: ENTITY_STATE_ENUM,
     subLevel?: ISubLevelData,

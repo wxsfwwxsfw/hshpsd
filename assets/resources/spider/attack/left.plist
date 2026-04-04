@@ -4,83 +4,57 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>spider_60.png</key>
+            <key>left_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{67,2},{55,40}}</string>
+                <string>{{0,0},{100,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{2,2},{55,40}}</string>
+                <string>{{0,0},{100,100}}</string>
                 <key>sourceSize</key>
-                <string>{59,44}</string>
+                <string>{100,100}</string>
             </dict>
-            <key>spider_61.png</key>
+            <key>left_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,43},{60,40}}</string>
+                <string>{{100,0},{100,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{2,2},{60,40}}</string>
+                <string>{{0,0},{100,100}}</string>
                 <key>sourceSize</key>
-                <string>{64,44}</string>
+                <string>{100,100}</string>
             </dict>
-            <key>spider_62.png</key>
+            <key>left_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,43},{60,40}}</string>
+                <string>{{200,0},{100,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{2,2},{60,40}}</string>
+                <string>{{0,0},{100,100}}</string>
                 <key>sourceSize</key>
-                <string>{64,44}</string>
+                <string>{100,100}</string>
             </dict>
-            <key>spider_63.png</key>
+            <key>left_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,43},{60,40}}</string>
+                <string>{{300,0},{100,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{2,2},{60,40}}</string>
+                <string>{{0,0},{100,100}}</string>
                 <key>sourceSize</key>
-                <string>{64,44}</string>
-            </dict>
-            <key>spider_64.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,2},{63,39}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{2,2},{63,39}}</string>
-                <key>sourceSize</key>
-                <string>{67,43}</string>
-            </dict>
-            <key>spider_65.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,85},{53,38}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{2,2},{53,38}}</string>
-                <key>sourceSize</key>
-                <string>{57,42}</string>
+                <string>{100,100}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -90,9 +64,7 @@
             <key>realTextureFileName</key>
             <string>left.png</string>
             <key>size</key>
-            <string>{128,128}</string>
-            <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:1ae7ca315a88a807fd573a4c7eb16983$</string>
+            <string>{400,100}</string>
             <key>textureFileName</key>
             <string>left.png</string>
         </dict>

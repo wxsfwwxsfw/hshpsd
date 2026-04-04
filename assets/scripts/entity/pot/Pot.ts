@@ -13,7 +13,7 @@ export default class Pot extends Entity {
         this.fsm = this.node.addComponent(PotFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        const params = Object.assign(data, { width: 50, height: 50, offsetY: 8 })
+        const params = Object.assign(data, { width: 70, height: 70 })
         super.init(params)
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_ATTACKED, this.onAttacked, this)

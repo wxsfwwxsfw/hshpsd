@@ -13,7 +13,7 @@ export default class Stone extends Entity {
         await Promise.all([this.fsm.init()])
         // 初始化
         // const params = Object.assign(data, { width: DataManager.instance.currentLevelTileWidth - 10, height: DataManager.instance.currentLevelTileWidth - 10 })
-        const params = Object.assign(data, { width: 70, height: 70, offsetX: 0, offsetY: 5 })
+        const params = Object.assign(data, { width: 70, height: 70 })
         super.init(params)
     }
 }

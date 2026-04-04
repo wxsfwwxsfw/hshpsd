@@ -15,7 +15,32 @@
       "Bash(cp \"D:/psd1/psd1/assets/scripts/anim/FiniteState.ts\" \"D:/hshpsd/assets/scripts/anim/FiniteState.ts\")",
       "Bash(cp \"D:/psd1/psd1/assets/scripts/anim/FiniteStateMachine.ts\" \"D:/hshpsd/assets/scripts/anim/FiniteStateMachine.ts\")",
       "Bash(python:*)",
-      "Bash(xargs ls:*)"
+      "Bash(xargs ls:*)",
+      "Bash(dir \"D:\\\\hshpsd\\\\\")",
+      "Bash(find D:/hshpsd/temp -name *.js)",
+      "Bash(find D:/hshpsd/temp -name *quick_compile* -o -name *preview*scripts*)",
+      "Bash(find D:/hshpsd/library -name *.js)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(find D:/hshpsd/assets/resources/stone -name *.png)",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(echo $GEMINI_API_KEY)",
+      "Bash(cmd /c \"python D:/new/generate_spider.py\")",
+      "Bash(cmd /c \"set GEMINI_API_KEY & python D:/new/generate_spider.py\")",
+      "Bash(powershell -Command \"python D:/new/generate_spider.py\" 2>&1)",
+      "Bash(powershell -Command \"$key = [System.Environment]::GetEnvironmentVariable\\('GEMINI_API_KEY', 'Machine'\\); $env:GEMINI_API_KEY = $key; python D:/new/generate_spider.py\" 2>&1)",
+      "Bash(powershell -Command \"\n\\\\$key = [System.Environment]::GetEnvironmentVariable\\('GEMINI_API_KEY', 'Machine'\\)\n\\\\$env:GEMINI_API_KEY = \\\\$key\npython D:/new/generate_spider.py\n\" 2>&1)",
+      "Bash(powershell -Command \"\n\\\\$key = [System.Environment]::GetEnvironmentVariable\\('GEMINI_API_KEY', 'Machine'\\)\n\\\\$env:GEMINI_API_KEY = \\\\$key\npython D:/new/generate_spider_v2.py\n\" 2>&1)",
+      "Bash(powershell -Command \"\n\\\\$idle = 'D:/hshpsd/assets/resources/spider/idle'\nforeach \\(\\\\$d in @\\('down','up','left','right'\\)\\) {\n    Copy-Item \\\\\"D:/new/v2_\\\\$d.png\\\\\" \\\\\"\\\\$idle/\\\\$d.png\\\\\" -Force\n    Copy-Item \\\\\"D:/new/v2_\\\\$d.plist\\\\\" \\\\\"\\\\$idle/\\\\$d.plist\\\\\" -Force\n    Write-Host \\\\\"Installed: \\\\$d\\\\\"\n}\nWrite-Host 'Done!'\n\")",
+      "Bash(powershell -Command \"\n\\\\$idle = 'D:/hshpsd/assets/resources/spider/idle'\nforeach \\(\\\\$d in @\\('down','up','left','right'\\)\\) {\n    Copy-Item \\\\\"D:/new/v2_\\\\$d.png\\\\\" \\\\\"\\\\$idle/\\\\$d.png\\\\\" -Force\n    Copy-Item \\\\\"D:/new/v2_\\\\$d.plist\\\\\" \\\\\"\\\\$idle/\\\\$d.plist\\\\\" -Force\n}\nWrite-Host 'Done!'\n\")",
+      "Bash(powershell -Command \"\n\\\\$idle = 'D:/hshpsd/assets/resources/spider/idle'\nforeach \\(\\\\$d in @\\('down','up','left','right'\\)\\) {\n    Copy-Item \\\\\"D:/new/fix_\\\\$d.png\\\\\" \\\\\"\\\\$idle/\\\\$d.png\\\\\" -Force\n}\nWrite-Host 'Done!'\n\")",
+      "Bash(powershell -Command \"\n\\\\$key = [System.Environment]::GetEnvironmentVariable\\('GEMINI_API_KEY', 'Machine'\\)\n\\\\$env:GEMINI_API_KEY = \\\\$key\npython D:/new/generate_items.py\n\" 2>&1)",
+      "Bash(ls:*)",
+      "Bash(xargs -I{} sh -c 'echo \"=== {} ===\" && cat {}')",
+      "Read(//d/new/**)",
+      "Bash(cp D:/new/barrel_final.png D:/hshpsd/assets/resources/box/idle.png)",
+      "Bash(rm -f D:/hshpsd/assets/resources/box/idle.png.meta)"
     ]
   }
 }

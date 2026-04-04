@@ -4,36 +4,54 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>attacked.png</key>
+            <key>pot_0.png</key>
             <dict>
-                <key>aliases</key>
-                <array/>
-                <key>spriteOffset</key>
+                <key>frame</key>
+                <string>{{0,0},{70,70}}</string>
+                <key>offset</key>
                 <string>{0,0}</string>
-                <key>spriteSize</key>
-                <string>{150,50}</string>
-                <key>spriteSourceSize</key>
-                <string>{150,50}</string>
-                <key>textureRect</key>
-                <string>{{0,0},{150,50}}</string>
-                <key>textureRotated</key>
+                <key>rotated</key>
                 <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{70,70}}</string>
+                <key>sourceSize</key>
+                <string>{70,70}</string>
+            </dict>
+            <key>pot_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{70,0},{70,70}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{70,70}}</string>
+                <key>sourceSize</key>
+                <string>{70,70}</string>
+            </dict>
+            <key>pot_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{140,0},{70,70}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{70,70}}</string>
+                <key>sourceSize</key>
+                <string>{70,70}</string>
             </dict>
         </dict>
         <key>metadata</key>
         <dict>
             <key>format</key>
-            <integer>3</integer>
-            <key>pixelFormat</key>
-            <string>RGBA8888</string>
-            <key>premultiplyAlpha</key>
-            <false/>
+            <integer>2</integer>
             <key>realTextureFileName</key>
             <string>attacked.png</string>
             <key>size</key>
-            <string>{150,50}</string>
-            <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:e010775bbc15ab277f43df9ea031a35a:48a594cc146759dcedb2f19eea404c37:84ef449b6dd96fadd597807b37929a69$</string>
+            <string>{210,70}</string>
             <key>textureFileName</key>
             <string>attacked.png</string>
         </dict>

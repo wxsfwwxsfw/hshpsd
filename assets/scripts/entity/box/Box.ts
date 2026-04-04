@@ -16,7 +16,7 @@ export default class Box extends Entity {
         this.fsm = this.node.addComponent(BoxFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        const params = Object.assign(data, { offsetY: 10 })
+        const params = Object.assign(data, { width: 72, height: 65, offsetX: 2, offsetY: -2 })
         super.init(params)
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_ATTACKED, this.onAttacked, this)

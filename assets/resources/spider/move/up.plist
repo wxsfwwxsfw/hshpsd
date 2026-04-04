@@ -4,57 +4,57 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>spider_30.png</key>
+            <key>up_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{56,36}}</string>
+                <string>{{0,0},{100,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{2,2},{56,36}}</string>
+                <string>{{0,0},{100,100}}</string>
                 <key>sourceSize</key>
-                <string>{60,40}</string>
+                <string>{100,100}</string>
             </dict>
-            <key>spider_31.png</key>
+            <key>up_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{60,2},{54,49}}</string>
+                <string>{{100,0},{100,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{2,2},{54,49}}</string>
+                <string>{{0,0},{100,100}}</string>
                 <key>sourceSize</key>
-                <string>{58,53}</string>
+                <string>{100,100}</string>
             </dict>
-            <key>spider_32.png</key>
+            <key>up_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{57,53},{51,50}}</string>
+                <string>{{200,0},{100,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{2,2},{51,50}}</string>
+                <string>{{0,0},{100,100}}</string>
                 <key>sourceSize</key>
-                <string>{55,54}</string>
+                <string>{100,100}</string>
             </dict>
-            <key>spider_33.png</key>
+            <key>up_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,40},{53,42}}</string>
+                <string>{{300,0},{100,100}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{2,2},{53,42}}</string>
+                <string>{{0,0},{100,100}}</string>
                 <key>sourceSize</key>
-                <string>{57,46}</string>
+                <string>{100,100}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -64,9 +64,7 @@
             <key>realTextureFileName</key>
             <string>up.png</string>
             <key>size</key>
-            <string>{128,128}</string>
-            <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:2011a504d618c38dbc960276caaf31c9$</string>
+            <string>{400,100}</string>
             <key>textureFileName</key>
             <string>up.png</string>
         </dict>

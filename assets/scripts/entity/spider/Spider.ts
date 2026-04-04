@@ -19,7 +19,7 @@ export default class Spider extends Entity {
         this.fsm = this.node.addComponent(SpiderFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        const params = Object.assign(data, { width: 55, height: 44 }, data)
+        const params = Object.assign(data, { width: 85, height: 85, offsetX: 8 }, data)
         super.init(params)
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished, this)

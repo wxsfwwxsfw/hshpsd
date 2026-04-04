@@ -13,7 +13,7 @@ export default class FloorTrap extends Entity {
         this.fsm = this.node.addComponent(FloorTrapFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        const params = Object.assign(data, {offsetY: 2})
+        const params = Object.assign(data)
         super.init(params)
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_ATTACKED, this.onAttacked, this)

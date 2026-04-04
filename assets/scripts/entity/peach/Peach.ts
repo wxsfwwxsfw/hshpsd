@@ -11,7 +11,9 @@ export default class Peach extends Entity {
     async init(data: IEntity) {
         this.fsm = this.node.addComponent(PeachFsm)
         await Promise.all([this.fsm.init()])
-        const params = Object.assign(data, { width: 40, height: 40, offsetX: 0, offsetY: 0 })
+        const tile = DataManager.instance.currentLevelTileWidth
+        const size = Math.max(34, Math.floor(tile * 0.34))
+        const params = Object.assign(data, { width: size, height: size, offsetY: -6 })
         super.init(params)
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished, this)
     }

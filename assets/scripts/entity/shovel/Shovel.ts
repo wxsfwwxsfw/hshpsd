@@ -13,7 +13,7 @@ export default class Shovel extends Entity {
         this.fsm = this.node.addComponent(ShovelFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        super.init(Object.assign(data))
+        super.init(Object.assign(data, { width: 55, height: 55, offsetY: -2 }))
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished, this)
     }

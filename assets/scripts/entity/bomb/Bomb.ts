@@ -16,7 +16,7 @@ export default class Bomb extends Entity {
         this.fsm = this.node.addComponent(BombFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        const params = Object.assign(data)
+        const params = Object.assign(data, { width: 55, height: 55, offsetX: 1, offsetY: -2 })
         super.init(params)
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished, this)

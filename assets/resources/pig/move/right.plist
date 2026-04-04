@@ -11,11 +11,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{55,55}</string>
+                <string>{72,56}</string>
                 <key>spriteSourceSize</key>
-                <string>{55,55}</string>
+                <string>{72,56}</string>
                 <key>textureRect</key>
-                <string>{{0,0},{55,55}}</string>
+                <string>{{0,0},{72,56}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -26,11 +26,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{55,55}</string>
+                <string>{72,56}</string>
                 <key>spriteSourceSize</key>
-                <string>{55,55}</string>
+                <string>{72,56}</string>
                 <key>textureRect</key>
-                <string>{{55,0},{55,55}}</string>
+                <string>{{72,0},{72,56}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -41,11 +41,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{55,55}</string>
+                <string>{72,56}</string>
                 <key>spriteSourceSize</key>
-                <string>{55,55}</string>
+                <string>{72,56}</string>
                 <key>textureRect</key>
-                <string>{{110,0},{55,55}}</string>
+                <string>{{144,0},{72,56}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -56,11 +56,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{55,55}</string>
+                <string>{72,56}</string>
                 <key>spriteSourceSize</key>
-                <string>{55,55}</string>
+                <string>{72,56}</string>
                 <key>textureRect</key>
-                <string>{{165,0},{55,55}}</string>
+                <string>{{216,0},{72,56}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -76,9 +76,7 @@
             <key>realTextureFileName</key>
             <string>right.png</string>
             <key>size</key>
-            <string>{220,55}</string>
-            <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:f94e294ecfe15a146273e85fcfc2b627:67e01e0cc88da42779ccf44cb5a0e330:eeed88a3defe439e06eddcb618ab96e1$</string>
+            <string>{288,56}</string>
             <key>textureFileName</key>
             <string>right.png</string>
         </dict>

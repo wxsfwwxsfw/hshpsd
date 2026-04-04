@@ -13,7 +13,7 @@ export default class Key extends Entity {
         this.fsm = this.node.addComponent(KeyFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        super.init(Object.assign(data, { width: 50, height: 50, offsetX: 0, offsetY: 0 }))
+        super.init(Object.assign(data, { width: 60, height: 60, offsetY: -2 }))
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished, this)
     }

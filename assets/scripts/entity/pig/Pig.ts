@@ -7,22 +7,38 @@ import { IEntity } from "../../level/Index";
 import EventManager from "../../runtime/EventManager";
 import PigFsm from './PigFsm';
 import DataManager from '../../runtime/DataManager';
+import Expression from '../expression/Expression';
+import { createNodeWithLT } from '../../Util';
 
 export default class Pig extends Entity {
     speed: number = 0.1
     isMoving: boolean = false
     keepMoving: boolean = false
+    warningExpression: Expression = null
 
     async init(data: IEntity) {
         // 动画
         this.fsm = this.node.addComponent(PigFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        const params = Object.assign(data, { width: DataManager.instance.currentLevelTileWidth * 0.9, height: DataManager.instance.currentLevelTileWidth * 0.9, offsetY: 0 })
+        const pigDisplayHeight = DataManager.instance.currentLevelTileWidth * (32 / 56)
+        const pigDisplayWidth = pigDisplayHeight * (72 / 56)
+        const params = Object.assign(data, {
+            width: pigDisplayWidth,
+            height: pigDisplayHeight,
+            offsetY: 0
+        })
         super.init(params)
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished, this)
         EventManager.instance.on(EVENT_ENUM.ENTITY_ATTACKED, this.onAttacked, this)
+    }
+
+    setPos(nx?: number, ny?: number) {
+        const tw = DataManager.instance.currentLevelTileWidth
+        const x = nx != null ? nx : this.x * tw + (tw - this.width) / 2 + this.offsetX
+        const y = ny != null ? ny : this.y * tw * -1 - (tw - this.height) / 2 + this.offsetY
+        this.node.setPosition(Math.round(x), Math.round(y))
     }
 
     onStepFinished(entity: Entity): void {
@@ -72,12 +88,14 @@ export default class Pig extends Entity {
     }
 
     startMoving() {
+        this.hideWarningExpression()
         this.keepMoving = true
         this.state = ENTITY_STATE_ENUM.MOVE
         this.onMoving(this.dir)
     }
 
     stopMoving() {
+        this.hideWarningExpression()
         this.keepMoving = false
         this.state = ENTITY_STATE_ENUM.IDLE
     }
@@ -85,7 +103,36 @@ export default class Pig extends Entity {
     onWarning(dir: ENTITY_DIRECTION_ENUM) {
         EventManager.instance.emit(EVENT_ENUM.EFFECT_AUDIO_PLAY, AUDIO_EFFECT_ENUM.PIG_NOTICE)
         this.dir = dir
+        this.showWarningExpression()
         this.state = ENTITY_STATE_ENUM.ATTACK
+    }
+
+    async showWarningExpression() {
+        if (this.warningExpression && this.warningExpression.node?.isValid) {
+            this.warningExpression.x = this.x
+            this.warningExpression.y = this.y
+            this.warningExpression.state = ENTITY_STATE_ENUM.IDLE
+            this.warningExpression.render()
+            return
+        }
+        const node: cc.Node = createNodeWithLT(`PigWarning_${this.uuid || this.node.name}`)
+        node.setParent(this.node.parent)
+        node.zIndex = NODE_ZINDEX_ENUM.EXPRESSION
+        const expression = node.addComponent(Expression)
+        await expression.init({
+            type: ENTITY_TYPE_ENUM.EXPRESSION,
+            x: this.x,
+            y: this.y,
+            state: ENTITY_STATE_ENUM.IDLE
+        })
+        this.warningExpression = expression
+    }
+
+    hideWarningExpression() {
+        if (this.warningExpression?.node?.isValid) {
+            this.warningExpression.node.destroy()
+        }
+        this.warningExpression = null
     }
 
     onMoving(dir: ENTITY_DIRECTION_ENUM): void {
@@ -219,6 +266,7 @@ export default class Pig extends Entity {
     }
 
     onDestroy() {
+        this.hideWarningExpression()
         EventManager.instance.off(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished)
         EventManager.instance.off(EVENT_ENUM.ENTITY_ATTACKED, this.onAttacked)
     }

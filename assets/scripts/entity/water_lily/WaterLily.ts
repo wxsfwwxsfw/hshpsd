@@ -18,7 +18,7 @@ export default class WaterLily extends Entity {
         this.fsm = this.node.addComponent(WaterLilyFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        const params = Object.assign(data, { width: DataManager.instance.currentLevelTileWidth * 0.8, height: DataManager.instance.currentLevelTileWidth * 0.8 })
+        const params = Object.assign(data, { width: 65, height: 65, offsetY: -1 })
         super.init(params)
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished, this)

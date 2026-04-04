@@ -4,44 +4,57 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>causticsspritesheet_0.png</key>
+            <key>water_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,134},{64,64}}</string>
+                <string>{{2,2},{105,105}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{64,64}}</string>
+                <string>{{0,0},{105,105}}</string>
                 <key>sourceSize</key>
-                <string>{64,64}</string>
+                <string>{105,105}</string>
             </dict>
-            <key>causticsspritesheet_1.png</key>
+            <key>water_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,68},{64,64}}</string>
+                <string>{{111,2},{105,105}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{64,64}}</string>
+                <string>{{0,0},{105,105}}</string>
                 <key>sourceSize</key>
-                <string>{64,64}</string>
+                <string>{105,105}</string>
             </dict>
-            <key>causticsspritesheet_2.png</key>
+            <key>water_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{64,64}}</string>
+                <string>{{220,2},{105,105}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{64,64}}</string>
+                <string>{{0,0},{105,105}}</string>
                 <key>sourceSize</key>
-                <string>{64,64}</string>
+                <string>{105,105}</string>
+            </dict>
+            <key>water_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{329,2},{105,105}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{105,105}}</string>
+                <key>sourceSize</key>
+                <string>{105,105}</string>
             </dict>
         </dict>
         <key>metadata</key>
@@ -51,9 +64,7 @@
             <key>realTextureFileName</key>
             <string>idle.png</string>
             <key>size</key>
-            <string>{128,256}</string>
-            <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:b55542fabde0639634787b6d1c01e5b1$</string>
+            <string>{436,109}</string>
             <key>textureFileName</key>
             <string>idle.png</string>
         </dict>

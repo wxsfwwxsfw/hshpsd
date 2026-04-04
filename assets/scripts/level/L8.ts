@@ -94,13 +94,13 @@ const key = {
 
 // 水域：x=1..4,y=2..3（横贯中央，分割上下区域）
 const waters = [
-    { type: ENTITY_TYPE_ENUM.WATER, x: 1, y: 2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 2, y: 2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 3, y: 2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 4, y: 2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 2, y: 3, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 3, y: 3, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 4, y: 3, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 1, y: 2, offsetX: 14, offsetY: -6, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 2, y: 2, offsetX: 8, offsetY: -6, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 3, y: 2, offsetX: 2, offsetY: -6, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 4, y: 2, offsetX: -4, offsetY: -6, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 2, y: 3, offsetX: 8, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 3, y: 3, offsetX: 2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 4, y: 3, offsetX: -4, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
 ]
 
 // 野猪：x=1,y=5（朝RIGHT逼近玩家）；x=5,y=4（朝LEFT）
