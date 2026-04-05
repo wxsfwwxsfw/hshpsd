@@ -18,7 +18,14 @@ export default class Beetle extends Entity {
         this.fsm = this.node.addComponent(BeetleFsm)
         await Promise.all([this.fsm.init()])
         // 初始化
-        const params = Object.assign(data, { width: 55, height: 44 })
+        const tileWidth = DataManager.instance.currentLevelTileWidth
+        const beetleDisplayWidth = tileWidth * 0.732
+        const beetleDisplayHeight = beetleDisplayWidth * (112 / 144)
+        const params = Object.assign(data, {
+            width: beetleDisplayWidth,
+            height: beetleDisplayHeight,
+            offsetY: 0,
+        })
         super.init(params)
         // 事件
         EventManager.instance.on(EVENT_ENUM.ENTITY_STEP_FINISHED, this.onStepFinished, this)

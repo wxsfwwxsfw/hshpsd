@@ -43,13 +43,7 @@ export default class FloorTrapFsm extends FiniteStateMachine {
 
     initAnimEvent(){
         this.anim.on(cc.Animation.EventType.FINISHED, ()=>{
-            const whiteList = ['attack']
-            const clipName = this.anim.currentClip.name
-            if(whiteList.some(item => clipName.includes(item))){
-                const floorTrap = this.node.getComponent(FloorTrap)
-                const state = ENTITY_STATE_ENUM.DIE
-                floorTrap.state = state
-            }
+            return
         }, this)
     }
 
@@ -61,7 +55,7 @@ export default class FloorTrapFsm extends FiniteStateMachine {
 
     initStateMachines(){
         this.stateMachines.set(ENTITY_STATE_ENUM.IDLE, new FiniteState(this, {path:'floor_trap/idle', resourceType: RESOURCE_TYPE_ENUM.SPRITE_FRAME}))
-        this.stateMachines.set(ENTITY_STATE_ENUM.ATTACK, new FiniteState(this, {path: 'floor_trap/attack/attack'}))
-        this.stateMachines.set(ENTITY_STATE_ENUM.DIE, new FiniteState(this, {path:'floor_trap/die', resourceType: RESOURCE_TYPE_ENUM.SPRITE_FRAME}))
+        this.stateMachines.set(ENTITY_STATE_ENUM.ATTACK, new FiniteState(this, {path:'floor_trap/die', resourceType: RESOURCE_TYPE_ENUM.SPRITE_FRAME}))
+        this.stateMachines.set(ENTITY_STATE_ENUM.DIE, new FiniteState(this, {path:'floor_trap/idle', resourceType: RESOURCE_TYPE_ENUM.SPRITE_FRAME}))
     }
 }

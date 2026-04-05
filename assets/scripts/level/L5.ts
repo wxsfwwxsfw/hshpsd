@@ -100,12 +100,12 @@ const key = {
 
 // 水域：x=1..3,y=3..4（3×2水坑），x=4列留空作击杀位
 const waters = [
-    { type: ENTITY_TYPE_ENUM.WATER, x: 1, y: 3, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 1, y: 4, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 2, y: 3, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 2, y: 4, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 3, y: 3, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
-    { type: ENTITY_TYPE_ENUM.WATER, x: 3, y: 4, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 1, y: 3, offsetX: 11, offsetY: -2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 1, y: 4, offsetX: 11, offsetY: 2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 2, y: 3, offsetX: 8, offsetY: -2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 2, y: 4, offsetX: 8, offsetY: 2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 3, y: 3, offsetX: 4, offsetY: -2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
+    { type: ENTITY_TYPE_ENUM.WATER, x: 3, y: 4, offsetX: 4, offsetY: 2, dir: ENTITY_DIRECTION_ENUM.DOWN, state: ENTITY_STATE_ENUM.IDLE },
 ]
 
 // 蘑菇 x=4,y=5：拾取后在原地向上投掷，草x=4,y=1阻挡，使其停在x=4,y=2

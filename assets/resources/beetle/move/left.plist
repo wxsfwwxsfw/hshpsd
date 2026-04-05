@@ -4,69 +4,79 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>redbeetle_54.png</key>
+            <key>redbeetle_78.png</key>
             <dict>
-                <key>frame</key>
-                <string>{{2,37},{44,32}}</string>
-                <key>offset</key>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
                 <string>{0,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{2,2},{44,32}}</string>
-                <key>sourceSize</key>
-                <string>{48,36}</string>
-            </dict>
-            <key>redbeetle_55.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,2},{46,33}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
+                <key>spriteSize</key>
+                <string>{144,112}</string>
+                <key>spriteSourceSize</key>
+                <string>{144,112}</string>
+                <key>textureRect</key>
+                <string>{{0,0},{144,112}}</string>
+                <key>textureRotated</key>
                 <false/>
-                <key>sourceColorRect</key>
-                <string>{{2,2},{46,33}}</string>
-                <key>sourceSize</key>
-                <string>{50,37}</string>
             </dict>
-            <key>redbeetle_56.png</key>
+            <key>redbeetle_79.png</key>
             <dict>
-                <key>frame</key>
-                <string>{{50,2},{45,33}}</string>
-                <key>offset</key>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
                 <string>{0,0}</string>
-                <key>rotated</key>
+                <key>spriteSize</key>
+                <string>{144,112}</string>
+                <key>spriteSourceSize</key>
+                <string>{144,112}</string>
+                <key>textureRect</key>
+                <string>{{144,0},{144,112}}</string>
+                <key>textureRotated</key>
                 <false/>
-                <key>sourceColorRect</key>
-                <string>{{2,2},{45,33}}</string>
-                <key>sourceSize</key>
-                <string>{49,37}</string>
             </dict>
-            <key>redbeetle_57.png</key>
+            <key>redbeetle_80.png</key>
             <dict>
-                <key>frame</key>
-                <string>{{2,83},{40,32}}</string>
-                <key>offset</key>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
                 <string>{0,0}</string>
-                <key>rotated</key>
-                <true/>
-                <key>sourceColorRect</key>
-                <string>{{2,2},{40,32}}</string>
-                <key>sourceSize</key>
-                <string>{44,36}</string>
+                <key>spriteSize</key>
+                <string>{144,112}</string>
+                <key>spriteSourceSize</key>
+                <string>{144,112}</string>
+                <key>textureRect</key>
+                <string>{{0,112},{144,112}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>redbeetle_81.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,0}</string>
+                <key>spriteSize</key>
+                <string>{144,112}</string>
+                <key>spriteSourceSize</key>
+                <string>{144,112}</string>
+                <key>textureRect</key>
+                <string>{{144,112},{144,112}}</string>
+                <key>textureRotated</key>
+                <false/>
             </dict>
         </dict>
         <key>metadata</key>
         <dict>
             <key>format</key>
-            <integer>2</integer>
+            <integer>3</integer>
+            <key>pixelFormat</key>
+            <string>RGBA8888</string>
+            <key>premultiplyAlpha</key>
+            <false/>
             <key>realTextureFileName</key>
             <string>left.png</string>
             <key>size</key>
-            <string>{128,128}</string>
-            <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:2dbc28d2cc24d96aa3eea8924efebb75$</string>
+            <string>{288,224}</string>
             <key>textureFileName</key>
             <string>left.png</string>
         </dict>

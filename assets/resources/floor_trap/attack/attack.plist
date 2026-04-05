@@ -20,22 +20,6 @@
                 <key>sourceColorRect</key><string>{{0,0},{82,82}}</string>
                 <key>sourceSize</key><string>{82,82}</string>
             </dict>
-            <key>trapdoor_2.png</key>
-            <dict>
-                <key>frame</key><string>{{164,0},{82,82}}</string>
-                <key>offset</key><string>{0,0}</string>
-                <key>rotated</key><false/>
-                <key>sourceColorRect</key><string>{{0,0},{82,82}}</string>
-                <key>sourceSize</key><string>{82,82}</string>
-            </dict>
-            <key>trapdoor_4.png</key>
-            <dict>
-                <key>frame</key><string>{{246,0},{82,82}}</string>
-                <key>offset</key><string>{0,0}</string>
-                <key>rotated</key><false/>
-                <key>sourceColorRect</key><string>{{0,0},{82,82}}</string>
-                <key>sourceSize</key><string>{82,82}</string>
-            </dict>
         </dict>
         <key>metadata</key>
         <dict>

@@ -10,10 +10,10 @@ export default class BeetleFsmForIdle extends FiniteStateMachineSub {
 
     constructor(fsm: FiniteStateMachine){
         super(fsm)
-        this.stateMachines.set(ENTITY_DIRECTION_ENUM.UP, new FiniteState(fsm, {path: 'beetle/idle/up', mode: cc.WrapMode.Loop}))
-        this.stateMachines.set(ENTITY_DIRECTION_ENUM.DOWN, new FiniteState(fsm, {path: 'beetle/idle/down', mode: cc.WrapMode.Loop}))
-        this.stateMachines.set(ENTITY_DIRECTION_ENUM.LEFT, new FiniteState(fsm, {path: 'beetle/idle/left', mode: cc.WrapMode.Loop}))
-        this.stateMachines.set(ENTITY_DIRECTION_ENUM.RIGHT, new FiniteState(fsm, {path: 'beetle/idle/right', mode: cc.WrapMode.Loop}))
+        this.stateMachines.set(ENTITY_DIRECTION_ENUM.UP, new FiniteState(fsm, {path: 'beetle/idle/up', mode: cc.WrapMode.Loop, speed: 0.5}))
+        this.stateMachines.set(ENTITY_DIRECTION_ENUM.DOWN, new FiniteState(fsm, {path: 'beetle/idle/down', mode: cc.WrapMode.Loop, speed: 0.5}))
+        this.stateMachines.set(ENTITY_DIRECTION_ENUM.LEFT, new FiniteState(fsm, {path: 'beetle/idle/left', mode: cc.WrapMode.Loop, speed: 0.5}))
+        this.stateMachines.set(ENTITY_DIRECTION_ENUM.RIGHT, new FiniteState(fsm, {path: 'beetle/idle/right', mode: cc.WrapMode.Loop, speed: 0.5}))
     }
 
     play(): void {

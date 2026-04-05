@@ -40,7 +40,13 @@
       "Bash(xargs -I{} sh -c 'echo \"=== {} ===\" && cat {}')",
       "Read(//d/new/**)",
       "Bash(cp D:/new/barrel_final.png D:/hshpsd/assets/resources/box/idle.png)",
-      "Bash(rm -f D:/hshpsd/assets/resources/box/idle.png.meta)"
+      "Bash(rm -f D:/hshpsd/assets/resources/box/idle.png.meta)",
+      "Bash(grep -E \"\\\\\\\\.json|config|setting\")",
+      "Bash(grep:*)",
+      "Read(//c/Users/Administrator/.claude/projects/D--hshpsd/**)",
+      "Bash(du -sh /c/Users/Administrator/.claude/projects/D--hshpsd/*.jsonl)",
+      "Bash(rm /c/Users/Administrator/.claude/projects/D--hshpsd/b88615e4-7666-43be-83db-0e5160abe5c7.jsonl /c/Users/Administrator/.claude/projects/D--hshpsd/ab1e8df9-921a-484e-bd0a-3209c23e3fcd.jsonl /c/Users/Administrator/.claude/projects/D--hshpsd/949a0d38-0f21-41ed-8c73-c07928b11a47.jsonl /c/Users/Administrator/.claude/projects/D--hshpsd/19132413-5e2c-4389-a526-c61108debead.jsonl /c/Users/Administrator/.claude/projects/D--hshpsd/f449af1f-8e1a-4506-8897-a8ecea90c627.jsonl)",
+      "Bash(rm -rf /c/Users/Administrator/.claude/projects/D--hshpsd/949a0d38-0f21-41ed-8c73-c07928b11a47 /c/Users/Administrator/.claude/projects/D--hshpsd/ab1e8df9-921a-484e-bd0a-3209c23e3fcd /c/Users/Administrator/.claude/projects/D--hshpsd/b88615e4-7666-43be-83db-0e5160abe5c7)"
     ]
   }
 }
